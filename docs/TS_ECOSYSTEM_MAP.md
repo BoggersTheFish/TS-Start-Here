@@ -50,9 +50,9 @@ Current releases:
 - v0.2.0 learned tension-ranker: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v0.2.0
 - v0.3.0 learned candidate proposal: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v0.3.0
 
-Active publication branch:
+Current active release:
 
-- v0.7.0 bounded multi-step tension-control loop and residual closure: https://github.com/BoggersTheFish/TS-Reasoner-v0/pull/1
+- v0.7.0 bounded multi-step tension-control loop and residual closure: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v0.7.0
 
 What it is:
 
@@ -191,11 +191,10 @@ Current best public sentence:
 
 What should happen next:
 
-1. Merge and tag the TS-Reasoner v0.7 publication branch.
-2. Keep TS-Reasoner v0.1.0-v0.7.0 stable unless there is a bug.
-3. Use TS-Codex-OS to manage future TS-Reasoner release-control tensions.
-4. Build TS-Reasoner v0.8.0 around a stronger verifier surface and harder adversarial loop evals.
-5. Add stronger benchmark/eval loops before making stronger model claims.
+1. Keep TS-Reasoner v0.1.0-v0.7.0 stable unless there is a bug.
+2. Use TS-Codex-OS to manage future TS-Reasoner release-control tensions.
+3. Build TS-Reasoner v0.8.0 around a stronger verifier surface and harder adversarial loop evals.
+4. Add stronger benchmark/eval loops before making stronger model claims.
 
 ## Release Discipline
 
