@@ -50,6 +50,10 @@ Current releases:
 - v0.2.0 learned tension-ranker: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v0.2.0
 - v0.3.0 learned candidate proposal: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v0.3.0
 
+Active publication branch:
+
+- v0.7.0 bounded multi-step tension-control loop and residual closure: https://github.com/BoggersTheFish/TS-Reasoner-v0/pull/1
+
 What it is:
 
 TS-Reasoner is a small Python standard-library reasoning telemetry repo. It represents reasoning as candidate chains, checks those chains with a toy Claim-Interaction Graph, scores local/global tension, suggests repairs, selects a low-tension answer, and exports JSON traces.
@@ -67,23 +71,36 @@ Current ladder:
 TS-Reasoner v0.1.0 -> deterministic inspectable trace contract
 TS-Reasoner v0.2.0 -> learned tension-ranker experiment inside the same contract
 TS-Reasoner v0.3.0 -> learned candidate proposal, still verified by CIG/tension/repair
+TS-Reasoner v0.4.0 -> coordinated tension-state operation engine
+TS-Reasoner v0.5.0 -> residual-trained coupling matrix
+TS-Reasoner v0.6.0 -> bounded multi-step tension-control loop
+TS-Reasoner v0.7.0 -> residual closure with redundant-claim compression
 ```
 
 Important caveat:
 
 TS-Reasoner is not a full LLM, theorem prover, or benchmark-grade reasoning system. The current tasks and metrics are toy-scope receipts. They show the interface and release discipline, not robust general reasoning.
 
+Current v0.7 claim:
+
+> TS-Reasoner v0.7 demonstrates bounded multi-step tension-control over toy reasoning traces: specialist tension agents route repair and compression operations until hard synthetic cases settle or expose residual failure.
+
+v0.7 release receipts report:
+
+- `23` unit tests passing.
+- `4/4` hard loop cases settled.
+- mean global tension dropping from `0.4552` to `0.0`.
+- explicit docs for v0.4 through v0.7 so the release ladder remains inspectable.
+
 Next technical step:
 
 ```text
-TS-Reasoner v0.4.0 = generator + ranker closed-loop repair
+TS-Reasoner v0.8.0 = stronger verifier surface and harder benchmark cases
 ```
 
-The intended v0.4 claim should be narrow:
+The intended v0.8 claim should stay narrow:
 
-> Generate candidate chains, score them, propose repairs, apply safe repair, re-score, and export before/after tension deltas.
-
-That would be the first mini `Propagate -> Relax -> Re-score` loop inside TS-Reasoner itself.
+> Expand beyond the current toy syllogistic templates by adding a stronger verifier surface and more adversarial loop cases, while keeping JSON traces, receipts, and failure modes explicit.
 
 ## 2. TS-Codex-OS
 
@@ -157,6 +174,7 @@ What is real now:
 
 - TS-Reasoner has public releases with a stable JSON trace contract.
 - TS-Reasoner has learned-ranker and learned-candidate-proposal experiments inside that contract.
+- TS-Reasoner v0.7 is being published as a bounded multi-step tension-control loop with release receipts and hard-case loop eval artifacts.
 - TS-Codex-OS has a public release that can ingest repos, score tensions, propose actions, suggest verification, write receipts, and produce project graph artifacts.
 - TS-Codex-OS has already been used to guide a TS-Reasoner release.
 
@@ -173,16 +191,11 @@ Current best public sentence:
 
 What should happen next:
 
-1. Keep TS-Reasoner v0.1.0, v0.2.0, and v0.3.0 stable unless there is a bug.
-2. Use TS-Codex-OS to manage future TS-Reasoner release-control tensions.
-3. Build TS-Reasoner v0.4.0 as a closed-loop repair experiment:
-   - generate candidate chains
-   - score tension
-   - propose repairs
-   - apply safe repair
-   - re-score
-   - export before/after deltas
-4. Add stronger benchmark/eval loops before making stronger model claims.
+1. Merge and tag the TS-Reasoner v0.7 publication branch.
+2. Keep TS-Reasoner v0.1.0-v0.7.0 stable unless there is a bug.
+3. Use TS-Codex-OS to manage future TS-Reasoner release-control tensions.
+4. Build TS-Reasoner v0.8.0 around a stronger verifier surface and harder adversarial loop evals.
+5. Add stronger benchmark/eval loops before making stronger model claims.
 
 ## Release Discipline
 
@@ -193,7 +206,10 @@ TS-Reasoner v0.1.0 -> trace contract
 TS-Reasoner v0.2.0 -> learned ranker
 TS-Codex-OS v0.1.0 -> project-control substrate
 TS-Reasoner v0.3.0 -> first TS-Codex-guided release
-TS-Reasoner v0.4.0 -> closed-loop repair experiment
+TS-Reasoner v0.4.0 -> coordinated tension-state operation engine
+TS-Reasoner v0.5.0 -> residual-trained coupling matrix
+TS-Reasoner v0.6.0 -> bounded multi-step control loop
+TS-Reasoner v0.7.0 -> residual closure and 4/4 hard-case loop settlement
 ```
 
 Every release should answer:
@@ -203,4 +219,3 @@ Every release should answer:
 - What verification ran?
 - What tension remains?
 - What claim is explicitly not being made?
-
