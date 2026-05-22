@@ -52,7 +52,7 @@ Current releases:
 
 Current active release:
 
-- v0.7.0 bounded multi-step tension-control loop and residual closure: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v0.7.0
+- v0.8.0 externalized small benchmark harness: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v0.8.0
 
 What it is:
 
@@ -75,32 +75,36 @@ TS-Reasoner v0.4.0 -> coordinated tension-state operation engine
 TS-Reasoner v0.5.0 -> residual-trained coupling matrix
 TS-Reasoner v0.6.0 -> bounded multi-step tension-control loop
 TS-Reasoner v0.7.0 -> residual closure with redundant-claim compression
+TS-Reasoner v0.8.0 -> externalized small benchmark harness and baseline comparison
 ```
 
 Important caveat:
 
 TS-Reasoner is not a full LLM, theorem prover, or benchmark-grade reasoning system. The current tasks and metrics are toy-scope receipts. They show the interface and release discipline, not robust general reasoning.
 
-Current v0.7 claim:
+Current v0.8 claim:
 
-> TS-Reasoner v0.7 demonstrates bounded multi-step tension-control over toy reasoning traces: specialist tension agents route repair and compression operations until hard synthetic cases settle or expose residual failure.
+> TS-Reasoner v0.8 tests bounded tension-control against simple baselines on externalized small reasoning tasks, while keeping answer scores, tension telemetry, release receipts, and failure modes inspectable.
 
-v0.7 release receipts report:
+v0.8 release receipts report:
 
-- `23` unit tests passing.
-- `4/4` hard loop cases settled.
-- mean global tension dropping from `0.4552` to `0.0`.
-- explicit docs for v0.4 through v0.7 so the release ladder remains inspectable.
+- `26` unit tests passing.
+- `10` curated externalized benchmark tasks.
+- `direct`: `4/10` correct, mean global tension `0.2141`.
+- `random_selector`: `5/10` correct, mean global tension `0.1771`.
+- `ranker_only`: `8/10` correct, mean global tension `0.0767`.
+- `full_control_loop`: `8/10` correct, `10/10` settled, mean global tension `0.0`.
+- explicit known gap: the full control loop fails both `small_proof_chain` tasks by settling to low-tension abstentions.
 
 Next technical step:
 
 ```text
-TS-Reasoner v0.8.0 = stronger verifier surface and harder benchmark cases
+TS-Reasoner v0.9.0 = stronger transitive proof-chain support
 ```
 
-The intended v0.8 claim should stay narrow:
+The intended v0.9 claim should stay narrow:
 
-> Expand beyond the current toy syllogistic templates by adding a stronger verifier surface and more adversarial loop cases, while keeping JSON traces, receipts, and failure modes explicit.
+> Fix the proof-chain gap exposed by v0.8 by strengthening transitive verification/generation while keeping benchmark receipts and failure modes explicit.
 
 ## 2. TS-Codex-OS
 
@@ -174,7 +178,7 @@ What is real now:
 
 - TS-Reasoner has public releases with a stable JSON trace contract.
 - TS-Reasoner has learned-ranker and learned-candidate-proposal experiments inside that contract.
-- TS-Reasoner v0.7 is being published as a bounded multi-step tension-control loop with release receipts and hard-case loop eval artifacts.
+- TS-Reasoner v0.8 is published as an externalized small benchmark harness with baseline comparison receipts.
 - TS-Codex-OS has a public release that can ingest repos, score tensions, propose actions, suggest verification, write receipts, and produce project graph artifacts.
 - TS-Codex-OS has already been used to guide a TS-Reasoner release.
 
@@ -191,10 +195,10 @@ Current best public sentence:
 
 What should happen next:
 
-1. Keep TS-Reasoner v0.1.0-v0.7.0 stable unless there is a bug.
+1. Keep TS-Reasoner v0.1.0-v0.8.0 stable unless there is a bug.
 2. Use TS-Codex-OS to manage future TS-Reasoner release-control tensions.
-3. Build TS-Reasoner v0.8.0 around a stronger verifier surface and harder adversarial loop evals.
-4. Add stronger benchmark/eval loops before making stronger model claims.
+3. Build TS-Reasoner v0.9.0 around stronger transitive proof-chain support.
+4. Add broader benchmark/eval loops only after the current proof-chain gap is closed.
 
 ## Release Discipline
 
@@ -209,6 +213,7 @@ TS-Reasoner v0.4.0 -> coordinated tension-state operation engine
 TS-Reasoner v0.5.0 -> residual-trained coupling matrix
 TS-Reasoner v0.6.0 -> bounded multi-step control loop
 TS-Reasoner v0.7.0 -> residual closure and 4/4 hard-case loop settlement
+TS-Reasoner v0.8.0 -> external benchmark harness and proof-chain gap receipt
 ```
 
 Every release should answer:
