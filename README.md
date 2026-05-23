@@ -10,6 +10,7 @@ The current public artifacts are mostly toy-scope or narrow-scope, but they are 
 
 Core docs:
 
+- [README First](README_FIRST.md)
 - [TS Ecosystem Map](docs/TS_ECOSYSTEM_MAP.md)
 - [First Contact](docs/first_contact.md)
 - [Repo Taxonomy](docs/repo_taxonomy.md)
@@ -21,9 +22,9 @@ Core docs:
 
 ## Fast Route For Researchers
 
-1. Read [First Contact](docs/first_contact.md) for the core hypothesis, concrete artifacts, reproducibility route, limits, and falsification points.
-2. Inspect [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0) for verifier-backed traces, release receipts, and the v0.9 proof-chain receipt.
-3. Inspect [TensionLM](https://github.com/BoggersTheFish/TensionLM) for sigmoid pairwise tension-attention mechanism experiments and the public Hugging Face runner.
+1. Read [README First](README_FIRST.md) for the current public stack and claim discipline.
+2. Inspect [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0) for verifier-backed traces, release receipts, and the v1.0 trace contract.
+3. Inspect [TensionLM](https://github.com/BoggersTheFish/TensionLM) for controlled sigmoid pairwise tension-attention comparisons and the public runner.
 4. Inspect [BoggersTheCIG](https://github.com/BoggersTheFish/BoggersTheCIG) or [cig-ts-engine](https://github.com/BoggersTheFish/cig-ts-engine) for provenance-aware claim/evidence graph work.
 
 ## Fast Route For Builders
@@ -45,7 +46,7 @@ Read this as an independent research stack with a sober receipt path:
 
 ## What Exists Now
 
-- TS-Reasoner has versioned public releases, tests, JSON traces, repair telemetry, a v0.8 externalized small benchmark harness, and a v0.9 proof-chain closure receipt.
+- TS-Reasoner has versioned public releases, tests, JSON traces, repair telemetry, a v1.0 trace contract, benchmark reports, known-limit receipts, and a TensionLM bridge smoke.
 - TS-Codex-OS exists as a local-first project-control substrate for graphing repo state, tensions, planned actions, and receipts.
 - TS-Core exists as a graph/tension runtime kernel.
 - TensionLM exists as a model-mechanism experiment around sigmoid pairwise tension attention.
@@ -75,19 +76,27 @@ The approach would be weakened if:
 ```text
 TS-Start-Here
   -> TS-Reasoner-v0
-  -> TensionLM
-  -> TS-Codex-OS / TS-Core / BoggersTheCIG
+  -> TensionLM-Wave02-H2H
+  -> TensionLM-117M-TS-Reasoner-v10
+  -> CIG / TS-Codex-OS
 ```
 
 ## Current Technical Step
 
-The current TS-Reasoner receipt is v0.9:
+The current TS-Reasoner receipt is v1.0:
 
 ```text
-Transitive proof-chain support for positive universal all/all chains
+Stable public trace contract, benchmark reports, limitations, model card, and bridge receipts
 ```
 
-v0.8 proved the harness works, but exposed the failure mode: settlement is not proof completion. v0.9 closes that narrow gap on the existing two small proof-chain tasks while keeping the benchmark claim toy-scope and normalized.
+Lead with the bounded artifact:
+
+```text
+Here is a small bounded reasoning system.
+Here are the traces.
+Here are the failures.
+Here is what changed from v3 to v10.
+```
 
 ## Links
 
