@@ -10,7 +10,7 @@ This plan makes the public GitHub surface read as a serious independent AI resea
   2. `TS-Reasoner-v0`
   3. `TS-Codex-OS`
   4. `TS-Core`
-  5. `bozo`
+  5. `TensionLM`
   6. `BoggersTheCIG`
 - Add sober repo descriptions and topics.
 - Do not delete historical repos.
@@ -43,7 +43,7 @@ Add the historical note to older repos:
 
 ```md
 > Historical prototype.
-> Current public research route: TS-Start-Here -> TS-Reasoner-v0 -> TS-Codex-OS -> TS-Core / TensionLM / CIG.
+> Current public research route: TS-Start-Here -> TS-Reasoner-v0 -> TensionLM -> TS-Codex-OS / TS-Core / CIG.
 > Start here: https://github.com/BoggersTheFish/TS-Start-Here
 ```
 

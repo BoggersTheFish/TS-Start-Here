@@ -58,7 +58,7 @@ Topics:
 graph, constraint-graph, simulation, reasoning, python, research
 ```
 
-## bozo / TensionLM
+## TensionLM
 
 Description:
 

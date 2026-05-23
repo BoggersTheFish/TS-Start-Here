@@ -19,9 +19,9 @@ The claim is not that this solves reasoning. The claim is that it creates useful
 ## Concrete Artifacts
 
 - [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0): deterministic Python toy reasoner with candidate chains, CIG checks, tension issues, repair suggestions, operation loops, and JSON traces.
+- [TensionLM](https://github.com/BoggersTheFish/TensionLM): sigmoid pairwise tension-attention experiments with a public Hugging Face runner.
 - [TS-Codex-OS](https://github.com/BoggersTheFish/TS-Codex-OS): local-first project graph, tension ledger, planner, and release receipt substrate.
 - [TS-Core](https://github.com/BoggersTheFish/TS-Core): graph/tension runtime kernel.
-- [bozo / TensionLM](https://github.com/BoggersTheFish/bozo): sigmoid pairwise tension-attention experiments.
 - [BoggersTheCIG](https://github.com/BoggersTheFish/BoggersTheCIG): local-first provenance-aware concept/evidence graph.
 - [cig-ts-engine](https://github.com/BoggersTheFish/cig-ts-engine): CIG engine branch for claim/evidence/provenance experiments.
 
@@ -35,23 +35,24 @@ Expected route:
 git clone https://github.com/BoggersTheFish/TS-Reasoner-v0
 cd TS-Reasoner-v0
 python3 -m unittest discover
-python3 scripts/evaluate_v08_external_benchmark.py
+python3 scripts/evaluate_v09_proof_chains.py
 ```
 
-The current v0.8 receipt reports:
+The current v0.9 receipt reports:
 
-- `26` unit tests passing,
+- `27` unit tests passing,
 - `10` curated externalized benchmark tasks,
 - `direct`: `4/10` correct,
-- `random_selector`: `5/10` correct,
-- `ranker_only`: `8/10` correct,
-- `full_control_loop`: `8/10` correct, `10/10` settled, mean final tension `0.0`.
+- `random_selector`: `6/10` correct,
+- `ranker_only`: `10/10` correct,
+- `full_control_loop`: `10/10` correct, `10/10` settled, mean final tension `0.0`,
+- `small_proof_chain/full_control_loop`: `2/2` correct.
 
 This is a narrow receipt, not a broad benchmark claim.
 
 ## Limits
 
-- The v0.8 benchmark is small, curated, and normalized into TS-Reasoner relation templates.
+- The v0.9 benchmark receipt is small, curated, and normalized into TS-Reasoner relation templates.
 - The current reasoner is a toy system, not a production theorem prover.
 - The current graph/provenance systems use heuristic confidence and contradiction logic.
 - Current model experiments are not production language models.
@@ -67,25 +68,25 @@ The approach weakens if:
 - provenance tracking does not improve contradiction handling or claim auditability,
 - stronger external benchmarks show no benefit over conventional verifier/ranker baselines.
 
-## Next Benchmark Direction
+## Current Benchmark Direction
 
-The next benchmark direction is TS-Reasoner v0.9:
+The current benchmark direction is TS-Reasoner v0.9:
 
 ```text
-Transitive proof-chain support
+Transitive proof-chain support for positive universal all/all chains
 ```
 
-v0.8 exposed the failure: settlement is not proof completion. The control loop can settle into low-tension abstention on small proof-chain tasks.
+v0.8 exposed the failure: settlement is not proof completion. The control loop could settle into low-tension abstention on small proof-chain tasks.
 
-v0.9 should test:
+v0.9 tests:
 
 ```text
 small_proof_chain failure
   -> detect unresolved transitive edge
-  -> propose bridge candidate
+  -> construct bridge candidate
   -> verify bridge against premises
   -> rerun control loop
-  -> score whether abstention converts into valid proof
+  -> confirm abstention converts into valid proof
 ```
 
 The useful telemetry distinction is:

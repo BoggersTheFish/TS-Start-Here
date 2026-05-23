@@ -12,7 +12,7 @@ These repos should be read first by skeptical technical visitors.
 | [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0) | Inspectable reasoning traces and external benchmark harness. | Best current release-receipt path. |
 | [TS-Codex-OS](https://github.com/BoggersTheFish/TS-Codex-OS) | Project graph, tension ledger, planner, release receipts. | Shows TS applied to project/release control. |
 | [TS-Core](https://github.com/BoggersTheFish/TS-Core) | Graph/tension runtime kernel. | Core runtime substrate. |
-| [bozo / TensionLM](https://github.com/BoggersTheFish/bozo) | Sigmoid pairwise tension attention experiments. | Model-mechanism branch. |
+| [TensionLM](https://github.com/BoggersTheFish/TensionLM) | Sigmoid pairwise tension attention experiments with a public HF runner. | Model-mechanism branch. |
 | [BoggersTheCIG](https://github.com/BoggersTheFish/BoggersTheCIG) | Provenance-aware concept/evidence graph. | Knowledge/provenance branch. |
 
 ## Active Core Repos
@@ -67,7 +67,7 @@ Some older repo names are chaotic because they were exploratory prototypes. That
 The clean route is:
 
 ```text
-TS-Start-Here -> TS-Reasoner-v0 -> TS-Codex-OS -> TS-Core -> TensionLM/bozo -> CIG
+TS-Start-Here -> TS-Reasoner-v0 -> TensionLM -> TS-Codex-OS / TS-Core / CIG
 ```
 
 ## Where A Serious Reviewer Should Start
@@ -75,5 +75,5 @@ TS-Start-Here -> TS-Reasoner-v0 -> TS-Codex-OS -> TS-Core -> TensionLM/bozo -> C
 1. Read the profile README.
 2. Read this repo's README.
 3. Read [First Contact](first_contact.md).
-4. Run TS-Reasoner-v0 and inspect its v0.8 report.
+4. Run TS-Reasoner-v0 and inspect its v0.9 proof-chain report.
 5. Review CIG and TensionLM as active research branches, with limitations in mind.
