@@ -22,10 +22,13 @@ BoggersTheFish profile
 ## Public Metadata To Confirm
 
 - GitHub repo `bozo` renamed to `TensionLM`.
-- Pinned repos ordered as `TS-Start-Here`, `TS-Reasoner-v0`, `TensionLM`, `TS-Codex-OS`, `TS-Core`, `BoggersTheCIG`.
 - GitHub repo descriptions/topics match `docs/repo_metadata_recommendations.md`.
 - Hugging Face model cards published from the local card updates.
 - TS-Reasoner v0.9 release created with `artifacts/release_receipt_v0.9.0.json`.
+
+Remaining UI-only check:
+
+- Pinned repos should be ordered as `TS-Start-Here`, `TS-Reasoner-v0`, `TensionLM`, `TS-Codex-OS`, `TS-Core`, `BoggersTheCIG`. The correct six repos are pinned; GitHub's available CLI/GraphQL schema in this run did not expose a profile-pin reorder mutation.
 
 ## Non-Claims
 
