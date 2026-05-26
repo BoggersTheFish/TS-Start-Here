@@ -5,15 +5,16 @@ This is the current public route for the TS stack:
 ```text
 TS-Start-Here
   -> TS-Reasoner-v0
-  -> TensionLM-Wave02-H2H
-  -> TensionLM-117M-TS-Reasoner-v10
+  -> typed tension release receipt
+  -> current limitations
+  -> TensionLM candidate bridge
   -> CIG / TS-Codex-OS
 ```
 
 Lead with the bounded artifact:
 
-> Here is a small bounded reasoning system. Here are the traces. Here are the
-> failures. Here is what changed from v3 to v10.
+> Here is TS-Reasoner v1.0.0. Here are the typed tension traces. Here is the
+> release receipt. Here are the limits. Here is the next candidate-bridge step.
 
 ## 1. TS-Start-Here
 
@@ -22,19 +23,17 @@ runs, what is still toy-scope, and which docs or receipts to inspect first.
 
 ## 2. TS-Reasoner-v0
 
-TS-Reasoner is the stable public foundation. It is an inspectable reasoning
-control loop:
+TS-Reasoner is the stable public foundation. The current release claim is:
 
-```text
-candidate chains -> local/global tension -> verifier loop -> settled trace
-```
+> TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
 
 Start here for:
 
 - one-command local runs,
 - JSON trace schema,
-- accepted and rejected candidates,
-- benchmark receipts,
+- typed channel traces,
+- accepted and rejected resolver operations,
+- release receipts,
 - known limits.
 
 ## 3. TensionLM-Wave02-H2H
@@ -49,22 +48,19 @@ What matters:
 - whether tension-attention improves the reasoning loop,
 - what the receipts do not prove.
 
-## 4. TensionLM-117M-TS-Reasoner-v10
+## 4. TS-Reasoner v1.1.0: TensionLM Candidate Bridge
 
-This is the integration lane. The clean claim is:
+This is the next integration lane. The clean claim should be:
 
-> We are testing whether a tension-attention language model can improve an
-> inspectable reasoning loop.
+> This release tests TensionLM as a candidate proposal layer, not as the reasoning authority.
 
 The pipeline should stay:
 
 ```text
-problem
-  -> TS-Reasoner creates reasoning state
-  -> TensionLM proposes candidate steps
-  -> tension scorer evaluates them
-  -> verifier checks them
-  -> trace records acceptance, repair, rejection, or failure
+messy input text
+  -> TensionLM/simple bridge proposes candidate claims
+  -> TS-Reasoner typed channels verify, reject, or abstain
+  -> trace records which candidates survived and why
 ```
 
 ## 5. CIG / TS-Codex-OS

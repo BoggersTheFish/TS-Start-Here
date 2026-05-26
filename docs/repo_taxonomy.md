@@ -9,7 +9,7 @@ These repos should be read first by skeptical technical visitors.
 | Repo | Role | Why first |
 | --- | --- | --- |
 | [TS-Start-Here](https://github.com/BoggersTheFish/TS-Start-Here) | Ecosystem map and taxonomy. | Gives the clean route and limitations before visitors hit older prototypes. |
-| [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0) | Inspectable reasoning traces and external benchmark harness. | Best current release-receipt path. |
+| [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0) | TS-Core-backed typed tension traces, learned channel calibration, stress, structural repair, and release receipts. | Best current runnable receipt path. |
 | [TS-Codex-OS](https://github.com/BoggersTheFish/TS-Codex-OS) | Project graph, tension ledger, planner, release receipts. | Shows TS applied to project/release control. |
 | [TS-Core](https://github.com/BoggersTheFish/TS-Core) | Graph/tension runtime kernel. | Core runtime substrate. |
 | [TensionLM](https://github.com/BoggersTheFish/TensionLM) | Sigmoid pairwise tension attention experiments with a public HF runner. | Model-mechanism branch. |
@@ -67,7 +67,7 @@ Some older repo names are chaotic because they were exploratory prototypes. That
 The clean route is:
 
 ```text
-TS-Start-Here -> TS-Reasoner-v0 -> TensionLM -> TS-Codex-OS / TS-Core / CIG
+TS-Start-Here -> TS-Reasoner-v0 v1.0.0 -> release receipt -> limitations -> next TensionLM candidate bridge
 ```
 
 ## Where A Serious Reviewer Should Start
@@ -75,5 +75,5 @@ TS-Start-Here -> TS-Reasoner-v0 -> TensionLM -> TS-Codex-OS / TS-Core / CIG
 1. Read the profile README.
 2. Read this repo's README.
 3. Read [First Contact](first_contact.md).
-4. Run TS-Reasoner-v0 and inspect its v0.9 proof-chain report.
-5. Review CIG and TensionLM as active research branches, with limitations in mind.
+4. Run TS-Reasoner-v0 and inspect its v1.0.0 typed-channel release receipt.
+5. Review the next TensionLM candidate bridge issue as active research, with limitations in mind.

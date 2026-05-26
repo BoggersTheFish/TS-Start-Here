@@ -18,7 +18,7 @@ The claim is not that this solves reasoning. The claim is that it creates useful
 
 ## Concrete Artifacts
 
-- [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0): deterministic Python toy reasoner with candidate chains, CIG checks, tension issues, repair suggestions, operation loops, and JSON traces.
+- [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0): TS-Core-backed typed tension reasoner with learned channel calibration, stress tests, structural repair, JSON traces, and machine-readable receipts.
 - [TensionLM](https://github.com/BoggersTheFish/TensionLM): sigmoid pairwise tension-attention experiments with a public Hugging Face runner.
 - [TS-Codex-OS](https://github.com/BoggersTheFish/TS-Codex-OS): local-first project graph, tension ledger, planner, and release receipt substrate.
 - [TS-Core](https://github.com/BoggersTheFish/TS-Core): graph/tension runtime kernel.
@@ -35,24 +35,19 @@ Expected route:
 git clone https://github.com/BoggersTheFish/TS-Reasoner-v0
 cd TS-Reasoner-v0
 python3 -m unittest discover
-python3 scripts/evaluate_v09_proof_chains.py
+python3 scripts/evaluate_typed_tension.py
+python3 scripts/generate_typed_channel_release_receipt.py
 ```
 
-The current v0.9 receipt reports:
+The current v1.0.0 claim is:
 
-- `27` unit tests passing,
-- `10` curated externalized benchmark tasks,
-- `direct`: `4/10` correct,
-- `random_selector`: `6/10` correct,
-- `ranker_only`: `10/10` correct,
-- `full_control_loop`: `10/10` correct, `10/10` settled, mean final tension `0.0`,
-- `small_proof_chain/full_control_loop`: `2/2` correct.
+> TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
 
-This is a narrow receipt, not a broad benchmark claim.
+This is a narrow receipt, not a broad benchmark or natural-language robustness claim.
 
 ## Limits
 
-- The v0.9 benchmark receipt is small, curated, and normalized into TS-Reasoner relation templates.
+- The v1.0.0 benchmark and stress receipts are synthetic, small, and parser-controlled.
 - The current reasoner is a toy system, not a production theorem prover.
 - The current graph/provenance systems use heuristic confidence and contradiction logic.
 - Current model experiments are not production language models.
@@ -70,30 +65,29 @@ The approach weakens if:
 
 ## Current Benchmark Direction
 
-The current benchmark direction is TS-Reasoner v0.9:
+The current release direction is:
 
 ```text
-Transitive proof-chain support for positive universal all/all chains
+v1.0.0 = typed reasoning substrate
+v1.1.0 = TensionLM candidate bridge
+v1.2.0 = messy natural-language stress
+v1.3.0 = CIG memory write/read receipts
+v1.4.0 = TS-Codex ecosystem truth-check
 ```
 
-v0.8 exposed the failure: settlement is not proof completion. The control loop could settle into low-tension abstention on small proof-chain tasks.
-
-v0.9 tests:
+The v1.1.0 bridge should keep TensionLM in the proposer role:
 
 ```text
-small_proof_chain failure
-  -> detect unresolved transitive edge
-  -> construct bridge candidate
-  -> verify bridge against premises
-  -> rerun control loop
-  -> confirm abstention converts into valid proof
+messy input text
+  -> TensionLM/simple bridge proposes candidate claims
+  -> TS-Reasoner typed channels verify, reject, or abstain
+  -> trace records which candidates survived and why
 ```
 
-The useful telemetry distinction is:
+The useful authority distinction is:
 
 ```text
-settled_abstention
-settled_answer
-settled_proof_complete
-settled_invalid
+TensionLM proposes.
+TS-Reasoner verifies.
+The trace explains.
 ```

@@ -27,7 +27,7 @@ Core docs:
 ## Fast Route For Researchers
 
 1. Read [README First](README_FIRST.md) for the current public stack and claim discipline.
-2. Inspect [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0) for verifier-backed traces, release receipts, and the v1.0 trace contract.
+2. Run [TS-Reasoner-v0 v1.0.0](https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v1.0.0), inspect a typed tension trace, and read the unified release receipt.
 3. Inspect [TS-Benchmarks](https://github.com/BoggersTheFish/TS-Benchmarks) for falsification-oriented scaling receipts, diagnostics, and failure reports.
 4. Inspect [TensionLM](https://github.com/BoggersTheFish/TensionLM) for controlled sigmoid pairwise tension-attention comparisons and the public runner.
 5. Inspect [BoggersTheCIG](https://github.com/BoggersTheFish/BoggersTheCIG) or [cig-ts-engine](https://github.com/BoggersTheFish/cig-ts-engine) for provenance-aware claim/evidence graph work.
@@ -44,7 +44,9 @@ Core docs:
 
 ```text
 TS-Start-Here
--> TS-Reasoner-v0: reasoning trace contract
+-> TS-Reasoner-v0: typed tension trace and release receipt
+-> limitations: synthetic, parser-controlled, not general reasoning
+-> next: TensionLM candidate bridge
 -> TS-Codex-OS: project-control substrate
 -> TS-Benchmarks: falsification and scaling harness
 -> TensionLM: model substrate experiment
@@ -63,7 +65,7 @@ Read this as an independent research stack with a sober receipt path:
 
 ## What Exists Now
 
-- TS-Reasoner has versioned public releases, tests, JSON traces, repair telemetry, a v1.0 trace contract, benchmark reports, known-limit receipts, and a TensionLM bridge smoke.
+- TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
 - TS-Benchmarks exists as a falsification-oriented scaling harness with receipts, diagnostics, schema validation, plots, and an explicit scale-free failure issue.
 - TS-Codex-OS exists as a local-first project-control substrate for graphing repo state, tensions, planned actions, and receipts.
 - TS-Core exists as a graph/tension runtime kernel.
@@ -75,7 +77,7 @@ Read this as an independent research stack with a sober receipt path:
 
 - TS-Reasoner is not a broad theorem prover or general reasoning model.
 - TS-Benchmarks v0.1 is synthetic graph evidence, not real-world knowledge graph scalability.
-- The v0.9 proof-chain receipt is small, curated, and normalized.
+- TS-Reasoner v1.0.0 is synthetic, parser-controlled, and not natural-language robust.
 - Current learned components are mechanism experiments, not production models.
 - CIG confidence and contradiction handling are heuristic.
 - TS-Codex-OS is local project-control infrastructure, not an autonomous engineering agent.
@@ -97,23 +99,31 @@ The approach would be weakened if:
 TS-Start-Here
   -> TS-Reasoner-v0
   -> TS-Benchmarks
-  -> TensionLM-Wave02-H2H
-  -> TensionLM-117M-TS-Reasoner-v10
+  -> TensionLM candidate bridge
   -> CIG / TS-Codex-OS
 ```
 
 ## Current Technical Step
 
-The current TS-Reasoner typed-tension receipt is `typed-tension-v0.1`:
+The current TS-Reasoner release is v1.0.0:
 
 ```text
-TS-Core-backed channel traces for transitivity, directionality, identity preservation, surface structure, confidence abstention, contradiction, and quantifier scope.
+Typed reasoning substrate:
+TS-Core-backed channels
+-> learned channel calibrator
+-> generalization stress
+-> structural feature repair
+-> unified release receipt
 ```
 
-The earlier TS-Reasoner receipt is v1.0:
+The next TS-Reasoner issue is v1.1.0:
 
 ```text
-Stable public trace contract, benchmark reports, limitations, model card, and bridge receipts
+TensionLM candidate bridge:
+messy input text
+-> candidate claims
+-> TS-Reasoner typed-channel verification
+-> accepted/rejected/abstained trace
 ```
 
 The current TS-Benchmarks receipt is v0.1:

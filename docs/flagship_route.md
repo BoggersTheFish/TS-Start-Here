@@ -6,8 +6,9 @@ This is the short public route for skeptical technical visitors.
 BoggersTheFish profile README
   -> TS-Start-Here
   -> TS-Reasoner-v0
-  -> TensionLM-Wave02-H2H
-  -> TensionLM-117M-TS-Reasoner-v10
+  -> typed tension release receipt
+  -> current limitations
+  -> TensionLM candidate bridge
   -> CIG / TS-Codex-OS
 ```
 
@@ -19,21 +20,29 @@ Start here when you want to know what exists, what is toy-scope, and what comes 
 
 ## 2. TS-Reasoner-v0
 
-Inspectable bounded reasoning telemetry with verifier-backed traces, repair loops, release receipts, a v1.0 trace contract, and benchmark reports.
+TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
 
-Current useful failure: low-tension settlement can still hide unsupported cases outside the narrow parser and proof-chain surface.
+Current useful limitation: the v1.0.0 evidence is synthetic, parser-controlled, and not natural-language robust.
 
-## 3. TensionLM-Wave02-H2H
+## 3. Read The Receipt And Limits
 
-Controlled sigmoid pairwise tension-attention comparisons. Treat as narrow model-mechanism research, not a proven replacement for transformer language models.
+Public route:
 
-The public runner should load a Hugging Face checkpoint and produce a raw sample; output quality is not the claim.
+```text
+Run TS-Reasoner v1.0.0
+-> inspect typed tension trace
+-> read release receipt
+-> understand current limitation
+-> next: language candidate bridge
+```
 
-## 4. TensionLM-117M-TS-Reasoner-v10
+## 4. TensionLM Candidate Bridge
 
-Integration lane: TensionLM proposes candidate steps, TS-Reasoner verifies them, and the trace records acceptance, repair, rejection, or failure.
+Next issue: `TS-Reasoner v1.1.0: TensionLM candidate bridge`.
 
-The public claim is: testing whether a tension-attention language model can improve an inspectable reasoning loop.
+TensionLM should not control reasoning. It should propose candidate structures; TS-Reasoner remains the verifier.
+
+The v1.1.0 claim should be: this release tests TensionLM as a candidate proposal layer, not as the reasoning authority.
 
 ## 5. CIG / TS-Codex-OS
 

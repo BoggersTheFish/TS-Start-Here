@@ -62,18 +62,18 @@ Current releases:
 
 Current active release:
 
-- v0.9.0 proof-chain support: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v0.9.0
+- v1.0.0 typed-channel release receipt: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v1.0.0
 
 What it is:
 
-TS-Reasoner is a small Python standard-library reasoning telemetry repo. It represents reasoning as candidate chains, checks those chains with a toy Claim-Interaction Graph, scores local/global tension, suggests repairs, selects a low-tension answer, and exports JSON traces.
+TS-Reasoner is a small Python reasoning telemetry repo. It now exposes TS-Core-backed typed tension channels, learned channel calibration, stress testing, structural feature repair, and JSON release receipts.
 
 What it proves:
 
-- Reasoning chains can be made inspectable as graph-like artifacts.
+- Reasoning failures can be separated into typed operational channels.
 - The public output schema can stay stable while internal components evolve.
-- Learned components can be plugged into the trace contract without hiding the verification path.
-- Release claims can stay sober: deterministic trace contract first, learned ranker second, learned candidate proposal third.
+- Learned calibration can target channel activation and resolver priority without replacing deterministic channel semantics.
+- Release claims can stay sober: typed substrate first, language candidate bridge second.
 
 Current ladder:
 
@@ -87,33 +87,32 @@ TS-Reasoner v0.6.0 -> bounded multi-step tension-control loop
 TS-Reasoner v0.7.0 -> residual closure with redundant-claim compression
 TS-Reasoner v0.8.0 -> externalized small benchmark harness and baseline comparison
 TS-Reasoner v0.9.0 -> transitive proof-chain support for positive universal all/all chains
+TS-Reasoner v1.0.0 -> TS-Core-backed typed channels, learned calibration, stress, structural repair, and unified receipt
 ```
 
 Important caveat:
 
 TS-Reasoner is not a full LLM, theorem prover, or benchmark-grade reasoning system. The current tasks and metrics are toy-scope receipts. They show the interface and release discipline, not robust general reasoning.
 
-Current v0.9 claim:
+Current v1.0.0 claim:
 
-> TS-Reasoner v0.9 closes the proof-chain gap exposed by v0.8 on the existing normalized small benchmark surface, while keeping answer scores, tension telemetry, release receipts, and failure modes inspectable.
+> TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
 
-v0.9 release receipts report:
+v1.0.0 release receipts report:
 
-- `27` unit tests passing.
-- `10` curated externalized benchmark tasks.
-- `direct`: `4/10` correct, mean global tension `0.2333`.
-- `random_selector`: `6/10` correct, mean global tension `0.1867`.
-- `ranker_only`: `10/10` correct, mean global tension `0.0767`.
-- `full_control_loop`: `10/10` correct, `10/10` settled, mean global tension `0.0`.
-- `small_proof_chain/full_control_loop`: `2/2` correct.
+- `45` unit tests passing at release time.
+- Scoped calibrator eval: `1.0` answer accuracy, channel activation accuracy, resolver accuracy, abstention correctness, and trace schema validity.
+- Generalization stress: Outcome B, exposing depth, distractor, quantifier, and contradiction-placement failures.
+- Structural repair: depth and distractor robustness move from `0.0` to `1.0`; quantifier trap failures and contradiction misses move from `1` to `0`.
+- Trace schema validity remains `1.0`.
 
 Current technical step:
 
 ```text
-TS-Reasoner v0.9.0 = narrow transitive proof-chain support
+TS-Reasoner v1.0.0 = typed reasoning substrate
 ```
 
-The v0.9 claim stays narrow: positive universal all/all chains only, still toy-scope and normalized.
+The v1.0.0 claim stays narrow: synthetic, parser-controlled, and not natural-language robust.
 
 ## 2. TS-Codex-OS
 
@@ -185,29 +184,28 @@ The existence of model artifacts does not by itself establish a robust TS-native
 
 What is real now:
 
-- TS-Reasoner has public releases with a stable JSON trace contract.
-- TS-Reasoner has learned-ranker and learned-candidate-proposal experiments inside that contract.
-- TS-Reasoner v0.9 is published as a narrow proof-chain closure receipt on the existing externalized small benchmark harness.
+- TS-Reasoner has public releases with stable JSON traces and machine-readable receipts.
+- TS-Reasoner v1.0.0 has TS-Core-backed typed tension channels, learned channel calibration, heldout stress, structural feature repair, and a unified release receipt.
 - TS-Codex-OS has a public release that can ingest repos, score tensions, propose actions, suggest verification, write receipts, and produce project graph artifacts.
 - TS-Codex-OS has already been used to guide a TS-Reasoner release.
 
 What remains scoped:
 
 - Current TS-Reasoner tasks are toy tasks.
-- Current learned components are smoke-test experiments.
+- Current learned components are channel calibrators and smoke-test experiments.
 - Current TS-Codex-OS ingestion is local and file-based.
 - Current claims are release-engineering claims, not general reasoning claims.
 
 Current best public sentence:
 
-> TS is becoming a versioned research stack: inspectable reasoning traces, learned tension components, project-control receipts, and a path toward stronger verifier-backed reasoning loops.
+> TS is becoming a versioned research stack: typed tension traces, learned channel calibration, project-control receipts, and a path toward language candidate proposals verified by explicit channels.
 
 What should happen next:
 
-1. Keep TS-Reasoner v0.1.0-v0.9.0 stable unless there is a bug.
-2. Use TS-Codex-OS to manage future TS-Reasoner release-control tensions.
-3. Extend proof-chain tests only after the current v0.9 receipt stays stable.
-4. Add broader benchmark/eval loops only after the narrow proof-chain support is audited beyond the tiny fixture.
+1. Keep TS-Reasoner v1.0.0 stable unless there is a bug.
+2. Build TS-Reasoner v1.1.0 as a TensionLM candidate bridge.
+3. Keep TensionLM in the proposer role and TS-Reasoner in the verifier role.
+4. Add messy natural-language stress only after the candidate bridge trace is stable.
 
 ## 5. TS-Benchmarks
 
@@ -251,6 +249,8 @@ TS-Reasoner v0.6.0 -> bounded multi-step control loop
 TS-Reasoner v0.7.0 -> residual closure and 4/4 hard-case loop settlement
 TS-Reasoner v0.8.0 -> external benchmark harness and proof-chain gap receipt
 TS-Reasoner v0.9.0 -> proof-chain gap closure on the tiny normalized fixture
+TS-Reasoner v1.0.0 -> typed reasoning substrate with channel calibration, stress, repair, and release receipt
+TS-Reasoner v1.1.0 -> TensionLM candidate bridge
 ```
 
 Every release should answer:

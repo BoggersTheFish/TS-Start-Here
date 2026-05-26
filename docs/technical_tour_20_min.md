@@ -13,10 +13,10 @@ Say:
 Show:
 
 ```text
-TS-Start-Here -> TS-Reasoner-v0 -> TensionLM -> TS-Codex-OS / TS-Core / CIG
+TS-Start-Here -> TS-Reasoner-v0 v1.0.0 -> release receipt -> limitations -> next TensionLM candidate bridge
 ```
 
-## 2:00-8:00 - TS-Reasoner v0.9 Receipt
+## 2:00-8:00 - TS-Reasoner v1.0.0 Receipt
 
 Run:
 
@@ -24,19 +24,21 @@ Run:
 git clone https://github.com/BoggersTheFish/TS-Reasoner-v0
 cd TS-Reasoner-v0
 python3 -m unittest discover
-python3 scripts/evaluate_v09_proof_chains.py
+python3 scripts/evaluate_typed_tension.py
+python3 scripts/generate_typed_channel_release_receipt.py
 ```
 
 Show:
 
-- `27` tests pass.
-- `artifacts/v09_proof_chain_report.json`.
-- `small_proof_chain/full_control_loop = 2/2`.
-- `full_control_loop = 10/10`.
+- typed tension channels in the JSON trace,
+- `artifacts/typed_channel_release_receipt.json`,
+- scoped calibrator metrics,
+- generalization stress Outcome B,
+- structural repair deltas.
 
 Say:
 
-> v0.8 exposed a useful failure: low tension could hide incomplete proof chains. v0.9 only fixes that narrow gap for positive universal all/all chains. It is still toy-scope and normalized.
+> TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
 
 ## 8:00-13:00 - Inspect Trace Shape
 
@@ -61,27 +63,23 @@ Say:
 
 > The useful object is not just the answer. It is the trace: candidate chains, graph checks, issue kinds, operation loops, and receipt artifacts.
 
-## 13:00-17:00 - TensionLM Public Run
+## 13:00-17:00 - Next Layer: TensionLM Candidate Bridge
 
-Run from the TensionLM repo:
+Do not present this as solved yet. Present it as the next issue:
 
-```bash
-python3 scripts/run_public_tensionlm.py \
-  --repo-id BoggersTheFish/TensionLM-Curriculum-13M \
-  --prompt "If all mammals are animals and all whales are mammals then"
+```text
+TS-Reasoner v1.1.0: TensionLM candidate bridge
 ```
 
 Show:
 
-- HF repo id,
-- weight file,
-- parameter count,
-- raw generation,
-- limitation note.
+- TensionLM/simple bridge proposes candidate claims,
+- TS-Reasoner typed channels verify, reject, or abstain,
+- trace records proposed, accepted, and rejected candidates with channel reasons.
 
 Say:
 
-> TensionLM is model-mechanism research around sigmoid pairwise tension attention. Output quality is not the current public claim. The public claim is that the checkpoint route can be loaded and inspected.
+> TensionLM is the candidate proposal layer, not the reasoning authority. TS-Reasoner remains the verifier.
 
 ## 17:00-20:00 - Limits And Falsification
 
@@ -95,6 +93,6 @@ Close with:
 
 ```text
 Start here: https://github.com/BoggersTheFish/TS-Start-Here
-Best receipt now: TS-Reasoner-v0 v0.9 proof-chain support
-Model mechanism route: TensionLM public HF runner
+Best receipt now: TS-Reasoner-v0 v1.0.0 typed-channel release receipt
+Next issue: TS-Reasoner v1.1.0 TensionLM candidate bridge
 ```
