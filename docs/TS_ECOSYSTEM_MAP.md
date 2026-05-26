@@ -38,6 +38,16 @@ In the current public repos, this means:
 - Break: split confused claims, modules, branches, or release scopes when one node carries incompatible demands.
 - Evolve: update the structure so future work is more stable and inspectable.
 
+## Public Golden Path
+
+```text
+TS-Start-Here
+-> TS-Reasoner-v0: reasoning trace contract
+-> TS-Codex-OS: project-control substrate
+-> TS-Benchmarks: falsification and scaling harness
+-> TensionLM: model substrate experiment
+```
+
 ## 1. TS-Reasoner
 
 Repo:
@@ -201,8 +211,9 @@ What should happen next:
 
 ## 5. TS-Benchmarks
 
-Local repo:
+Repo:
 
+- https://github.com/BoggersTheFish/TS-Benchmarks
 - `/home/boggersthefish/BoggersSpace/TS-Benchmarks`
 
 What it is:
@@ -213,13 +224,17 @@ Current implemented slice:
 
 - deterministic synthetic graph scaling harness
 - TS-Core-style sparse active-frontier relaxation reference
-- degree and PageRank-like contradiction localization baselines
+- degree, PageRank-like, and random residual contradiction localization baselines
 - benchmark receipt schema
-- JSON result receipts and markdown/CSV report generation
+- JSON result receipts, schema validation, plots, and markdown/CSV report generation
 
 Important caveat:
 
 The first scaling harness is not a capability claim. The initial local sweep already exposed a failure mode: scale-free graphs retained high final tension and zero contradiction-localization F1 under the first reference config. That should be treated as a high-tension engineering node, not hidden.
+
+Public framing:
+
+> v0.1 does not claim TS-Core scales cleanly. It shows where reference TS relaxation succeeds, where it fails, and which diagnostics will drive the next implementation.
 
 ## Release Discipline
 

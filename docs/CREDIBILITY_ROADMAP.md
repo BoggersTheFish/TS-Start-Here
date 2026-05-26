@@ -6,6 +6,7 @@ This roadmap is the current bridge from toy TS receipts toward benchmark and har
 
 Local repo:
 
+- https://github.com/BoggersTheFish/TS-Benchmarks
 - `/home/boggersthefish/BoggersSpace/TS-Benchmarks`
 
 Current implemented slice:
@@ -13,10 +14,20 @@ Current implemented slice:
 - deterministic TS-Core-style scaling harness
 - graph families: random, scale-free, small-world, knowledge-like, provenance, temporal, multi-context
 - sparse active-frontier relaxation reference
-- degree and PageRank-like localization baselines
+- degree, PageRank-like, and random residual localization baselines
 - benchmark receipt schema
-- JSON result and receipt outputs
-- markdown/CSV report generation
+- JSON result and receipt outputs tied to clean commits
+- markdown/CSV report generation and PNG plots
+
+Public golden path:
+
+```text
+TS-Start-Here
+-> TS-Reasoner-v0: reasoning trace contract
+-> TS-Codex-OS: project-control substrate
+-> TS-Benchmarks: falsification and scaling harness
+-> TensionLM: model substrate experiment
+```
 
 Current claim boundary:
 
@@ -29,6 +40,10 @@ Current forbidden claim:
 ## First Observed Result
 
 The first local 100/1k/10k sweep is intentionally treated as a measurement, not a win. Random and small-world graphs relaxed cleanly in the first run. Scale-free graphs produced high remaining tension and zero contradiction-localization F1 in that configuration, which is a real failure signal to investigate before stronger claims.
+
+Public framing:
+
+> v0.1 does not claim TS-Core scales cleanly. It shows where reference TS relaxation succeeds, where it fails, and which diagnostics will drive the next implementation.
 
 ## Next Technical Steps
 
