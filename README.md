@@ -11,6 +11,9 @@ The current public artifacts are mostly toy-scope or narrow-scope, but they are 
 Core docs:
 
 - [README First](README_FIRST.md)
+- [TS Stack Doctrine](docs/TS_STACK_DOCTRINE.md)
+- [Typed Tension Spec](docs/TYPED_TENSION_SPEC.md)
+- [TS Receipt Schema](docs/TS_RECEIPT_SCHEMA.md)
 - [TS Ecosystem Map](docs/TS_ECOSYSTEM_MAP.md)
 - [Credibility Roadmap](docs/CREDIBILITY_ROADMAP.md)
 - [First Contact](docs/first_contact.md)
@@ -101,7 +104,13 @@ TS-Start-Here
 
 ## Current Technical Step
 
-The current TS-Reasoner receipt is v1.0:
+The current TS-Reasoner typed-tension receipt is `typed-tension-v0.1`:
+
+```text
+TS-Core-backed channel traces for transitivity, directionality, identity preservation, surface structure, confidence abstention, contradiction, and quantifier scope.
+```
+
+The earlier TS-Reasoner receipt is v1.0:
 
 ```text
 Stable public trace contract, benchmark reports, limitations, model card, and bridge receipts
