@@ -199,6 +199,28 @@ What should happen next:
 3. Extend proof-chain tests only after the current v0.9 receipt stays stable.
 4. Add broader benchmark/eval loops only after the narrow proof-chain support is audited beyond the tiny fixture.
 
+## 5. TS-Benchmarks
+
+Local repo:
+
+- `/home/boggersthefish/BoggersSpace/TS-Benchmarks`
+
+What it is:
+
+TS-Benchmarks is the new audit-first benchmark harness for scaling, reasoning, hardware, and hybrid Graph+LLM evidence.
+
+Current implemented slice:
+
+- deterministic synthetic graph scaling harness
+- TS-Core-style sparse active-frontier relaxation reference
+- degree and PageRank-like contradiction localization baselines
+- benchmark receipt schema
+- JSON result receipts and markdown/CSV report generation
+
+Important caveat:
+
+The first scaling harness is not a capability claim. The initial local sweep already exposed a failure mode: scale-free graphs retained high final tension and zero contradiction-localization F1 under the first reference config. That should be treated as a high-tension engineering node, not hidden.
+
 ## Release Discipline
 
 The release pattern should stay boring, sober, and cumulative:
