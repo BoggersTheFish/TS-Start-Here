@@ -9,7 +9,7 @@ These repos should be read first by skeptical technical visitors.
 | Repo | Role | Why first |
 | --- | --- | --- |
 | [TS-Start-Here](https://github.com/BoggersTheFish/TS-Start-Here) | Ecosystem map and taxonomy. | Gives the clean route and limitations before visitors hit older prototypes. |
-| [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0) | TS-Core-backed typed tension traces, candidate containment, exported TensionLM-style ingestion, messy candidate stress, and real exported TensionLM-side sample receipts. | Best current runnable receipt path. |
+| [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0) | TS-Core-backed typed tension traces, candidate containment, exported TensionLM-style ingestion, messy candidate stress, real exported TensionLM-side sample receipts, and export set failure preservation. | Best current runnable receipt path. |
 | [TS-Codex-OS](https://github.com/BoggersTheFish/TS-Codex-OS) | Project graph, tension ledger, planner, release receipts. | Shows TS applied to project/release control. |
 | [TS-Core](https://github.com/BoggersTheFish/TS-Core) | Graph/tension runtime kernel. | Core runtime substrate. |
 | [TensionLM](https://github.com/BoggersTheFish/TensionLM) | Sigmoid pairwise tension attention experiments with a public HF runner. | Model-mechanism branch. |
@@ -67,7 +67,7 @@ Some older repo names are chaotic because they were exploratory prototypes. That
 The clean route is:
 
 ```text
-TS-Start-Here -> TS-Reasoner-v0 v1.5.0 -> real exported TensionLM-side sample receipt -> limitations -> next export set evaluation
+TS-Start-Here -> TS-Reasoner-v0 v1.6.0 -> TensionLM export set receipt -> limitations -> next deeper-chain repair
 ```
 
 ## Where A Serious Reviewer Should Start
@@ -75,5 +75,5 @@ TS-Start-Here -> TS-Reasoner-v0 v1.5.0 -> real exported TensionLM-side sample re
 1. Read the profile README.
 2. Read this repo's README.
 3. Read [First Contact](first_contact.md).
-4. Run TS-Reasoner-v0 and inspect its v1.5.0 real exported TensionLM-side sample receipt.
-5. Review the v1.0.0 through v1.5.0 ladder before treating TensionLM outputs as anything more than candidate data.
+4. Run TS-Reasoner-v0 and inspect its v1.6.0 TensionLM export set receipt.
+5. Review the v1.0.0 through v1.6.0 ladder before treating TensionLM outputs as anything more than candidate data.

@@ -38,15 +38,16 @@ python3 -m unittest discover
 python3 scripts/evaluate_real_exported_tensionlm_sample.py
 ```
 
-The current v1.5.0 claim is:
+The current v1.6.0 claim is:
 
-> TS-Reasoner can consume real exported TensionLM-side candidate data through a typed verification boundary where provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
+> TS-Reasoner can evaluate multiple exported TensionLM-side candidate samples through a typed verification boundary where malformed, unsupported, contradictory, reverse, and deeper-chain current-limit cases are preserved as failure reasons instead of hidden.
 
-This is a narrow cross-repo exported-sample receipt, not live TensionLM integration into the verifier.
+This is a narrow cross-repo exported-set receipt, not live TensionLM integration into the verifier.
 
 ## Limits
 
-- The v1.5.0 exported sample set is tiny, and the verifier remains parser-controlled.
+- The v1.6.0 exported sample set is small, and the verifier remains parser-controlled.
+- The deeper-chain support gap is recorded as a current-limit case and is the next repair target.
 - The current reasoner is a toy system, not a production theorem prover.
 - The current graph/provenance systems use heuristic confidence and contradiction logic.
 - Current model experiments are not production language models.
@@ -73,7 +74,8 @@ v1.2.0 = exported TensionLM-style adapter
 v1.3.0 = messy language candidate stress
 v1.4.0 = exported-output smoke boundary
 v1.5.0 = real exported TensionLM-side sample crosses into TS-Reasoner as candidate data
-v1.6.0 = planned TensionLM export set evaluation
+v1.6.0 = TensionLM export set evaluation with preserved failure reasons
+v1.7.0 = planned deeper-chain support repair
 ```
 
 The bridge keeps TensionLM in the proposer role:

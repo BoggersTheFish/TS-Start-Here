@@ -13,10 +13,10 @@ Say:
 Show:
 
 ```text
-TS-Start-Here -> TS-Reasoner-v0 v1.5.0 -> exported-sample receipt -> limitations -> next export set evaluation
+TS-Start-Here -> TS-Reasoner-v0 v1.6.0 -> export set receipt -> limitations -> next deeper-chain repair
 ```
 
-## 2:00-8:00 - TS-Reasoner v1.5.0 Receipt
+## 2:00-8:00 - TS-Reasoner v1.6.0 Receipt
 
 Run:
 
@@ -24,20 +24,21 @@ Run:
 git clone https://github.com/BoggersTheFish/TS-Reasoner-v0
 cd TS-Reasoner-v0
 python3 -m unittest discover
-python3 scripts/evaluate_real_exported_tensionlm_sample.py
+python3 scripts/evaluate_tensionlm_export_set.py
 ```
 
 Show:
 
 - typed-channel verification in the candidate results,
-- `artifacts/real_exported_tensionlm_sample_receipt.json`,
+- `artifacts/tensionlm_export_set_receipt.json`,
 - preserved source provenance from the existing TensionLM-side eval artifact,
+- `candidate_parse_success_rate: 0.8889` with `candidate_parse_expectation_rate: 1.0`,
 - verifier-over-confidence behavior,
 - zero candidate graph contamination.
 
 Say:
 
-> TS-Reasoner can consume real exported TensionLM-side candidate data through a typed verification boundary where provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
+> TS-Reasoner can evaluate multiple exported TensionLM-side candidate samples through a typed verification boundary where malformed, unsupported, contradictory, reverse, and deeper-chain current-limit cases are preserved as failure reasons instead of hidden.
 
 ## 8:00-13:00 - Inspect Trace Shape
 
@@ -68,7 +69,7 @@ Do not present this as live model integration. Present it as exported candidate
 data under verifier authority:
 
 ```text
-TS-Reasoner v1.5.0: real exported TensionLM-side sample
+TS-Reasoner v1.6.0: TensionLM export set evaluation
 ```
 
 Show:
@@ -93,6 +94,6 @@ Close with:
 
 ```text
 Start here: https://github.com/BoggersTheFish/TS-Start-Here
-Best receipt now: TS-Reasoner-v0 v1.5.0 real exported TensionLM-side sample receipt
-Next issue: TS-Reasoner v1.6.0 TensionLM export set evaluation
+Best receipt now: TS-Reasoner-v0 v1.6.0 TensionLM export set receipt
+Next issue: TS-Reasoner v1.7.0 deeper-chain support repair
 ```

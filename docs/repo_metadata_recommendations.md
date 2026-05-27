@@ -7,7 +7,7 @@ Use these descriptions and topics in GitHub repository settings.
 Description:
 
 ```text
-Public map for the BoggersTheFish TS stack: TS-Reasoner v1.5 receipts, TensionLM boundaries, limits, and next steps.
+Public map for the BoggersTheFish TS stack: TS-Reasoner v1.6 receipts, TensionLM boundaries, limits, and next repairs.
 ```
 
 Topics:
@@ -21,7 +21,7 @@ ai, reasoning, interpretability, constraint-graph, verification, provenance, res
 Description:
 
 ```text
-Typed verification reasoner with candidate containment, exported TensionLM-side sample receipts, and proof-boundary traces.
+Typed verification reasoner with candidate containment, exported TensionLM-side set receipts, and proof-boundary traces.
 ```
 
 Topics:

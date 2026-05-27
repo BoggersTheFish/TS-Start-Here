@@ -7,15 +7,15 @@ TS-Start-Here
   -> TS-Reasoner-v0
   -> typed verification and exported-sample receipts
   -> current limitations
-  -> TensionLM export set evaluation
+  -> deeper-chain support repair
   -> CIG / TS-Codex-OS
 ```
 
 Lead with the bounded artifact:
 
-> Here is TS-Reasoner v1.5.0. Here is the real exported TensionLM-side sample.
-> Here is the typed verification receipt. Here are the limits. Here is the next
-> export-set evaluation step.
+> Here is TS-Reasoner v1.6.0. Here is the exported TensionLM-side sample set.
+> Here is the typed verification receipt. Here are the preserved failure
+> reasons. Here is the next deeper-chain repair step.
 
 ## 1. TS-Start-Here
 
@@ -49,9 +49,9 @@ What matters:
 - whether tension-attention improves the reasoning loop,
 - what the receipts do not prove.
 
-## 4. TS-Reasoner v1.5.0: TensionLM Candidate Boundary
+## 4. TS-Reasoner v1.6.0: TensionLM Export Set Boundary
 
-This integration lane is now active through v1.5.0. The clean claim is:
+This integration lane is now active through v1.6.0. The clean claim is:
 
 > TensionLM-side outputs enter as candidate data. TS-Reasoner verifies them. Candidate confidence is not proof.
 
@@ -64,9 +64,8 @@ real or exported TensionLM-side output
   -> trace records which candidates survived and why
 ```
 
-The next technical step is v1.6.0: evaluate a small set of real exported
-TensionLM-side samples with the same adapter boundary and preserved failure
-reasons.
+The next technical step is v1.7.0: repair the deeper-chain support failure that
+v1.6.0 preserved as a current-limit case.
 
 ## 5. CIG / TS-Codex-OS
 
