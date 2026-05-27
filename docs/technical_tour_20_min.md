@@ -13,10 +13,10 @@ Say:
 Show:
 
 ```text
-TS-Start-Here -> TS-Reasoner-v0 v1.0.0 -> release receipt -> limitations -> next TensionLM candidate bridge
+TS-Start-Here -> TS-Reasoner-v0 v1.5.0 -> exported-sample receipt -> limitations -> next export set evaluation
 ```
 
-## 2:00-8:00 - TS-Reasoner v1.0.0 Receipt
+## 2:00-8:00 - TS-Reasoner v1.5.0 Receipt
 
 Run:
 
@@ -24,21 +24,20 @@ Run:
 git clone https://github.com/BoggersTheFish/TS-Reasoner-v0
 cd TS-Reasoner-v0
 python3 -m unittest discover
-python3 scripts/evaluate_typed_tension.py
-python3 scripts/generate_typed_channel_release_receipt.py
+python3 scripts/evaluate_real_exported_tensionlm_sample.py
 ```
 
 Show:
 
-- typed tension channels in the JSON trace,
-- `artifacts/typed_channel_release_receipt.json`,
-- scoped calibrator metrics,
-- generalization stress Outcome B,
-- structural repair deltas.
+- typed-channel verification in the candidate results,
+- `artifacts/real_exported_tensionlm_sample_receipt.json`,
+- preserved source provenance from the existing TensionLM-side eval artifact,
+- verifier-over-confidence behavior,
+- zero candidate graph contamination.
 
 Say:
 
-> TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
+> TS-Reasoner can consume real exported TensionLM-side candidate data through a typed verification boundary where provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
 
 ## 8:00-13:00 - Inspect Trace Shape
 
@@ -63,17 +62,18 @@ Say:
 
 > The useful object is not just the answer. It is the trace: candidate chains, graph checks, issue kinds, operation loops, and receipt artifacts.
 
-## 13:00-17:00 - Next Layer: TensionLM Candidate Bridge
+## 13:00-17:00 - Bridge Layer: TensionLM Candidate Data
 
-Do not present this as solved yet. Present it as the next issue:
+Do not present this as live model integration. Present it as exported candidate
+data under verifier authority:
 
 ```text
-TS-Reasoner v1.1.0: TensionLM candidate bridge
+TS-Reasoner v1.5.0: real exported TensionLM-side sample
 ```
 
 Show:
 
-- TensionLM/simple bridge proposes candidate claims,
+- exported TensionLM-side data proposes candidate claims,
 - TS-Reasoner typed channels verify, reject, or abstain,
 - trace records proposed, accepted, and rejected candidates with channel reasons.
 
@@ -93,6 +93,6 @@ Close with:
 
 ```text
 Start here: https://github.com/BoggersTheFish/TS-Start-Here
-Best receipt now: TS-Reasoner-v0 v1.0.0 typed-channel release receipt
-Next issue: TS-Reasoner v1.1.0 TensionLM candidate bridge
+Best receipt now: TS-Reasoner-v0 v1.5.0 real exported TensionLM-side sample receipt
+Next issue: TS-Reasoner v1.6.0 TensionLM export set evaluation
 ```

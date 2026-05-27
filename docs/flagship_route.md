@@ -6,9 +6,9 @@ This is the short public route for skeptical technical visitors.
 BoggersTheFish profile README
   -> TS-Start-Here
   -> TS-Reasoner-v0
-  -> typed tension release receipt
+  -> typed verification and exported-sample receipts
   -> current limitations
-  -> TensionLM candidate bridge
+  -> TensionLM export set evaluation
   -> CIG / TS-Codex-OS
 ```
 
@@ -20,29 +20,29 @@ Start here when you want to know what exists, what is toy-scope, and what comes 
 
 ## 2. TS-Reasoner-v0
 
-TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
+TS-Reasoner v1.5.0 is the current public bridge receipt. v1.0.0 established TS-Core-backed typed tension reasoning with learned channel calibration, stress, structural repair, and machine-readable receipts. v1.1.0 through v1.4.0 added candidate containment, exported-output ingestion, messy language stress, and exported-output smoke tests. v1.5.0 adds the first real exported TensionLM-side sample path.
 
-Current useful limitation: the v1.0.0 evidence is synthetic, parser-controlled, and not natural-language robust.
+Current useful limitation: v1.5.0 is still an exported-sample receipt, not live model integration into the verifier. Real TensionLM-side candidate data remains candidate data, not proof.
 
 ## 3. Read The Receipt And Limits
 
 Public route:
 
 ```text
-Run TS-Reasoner v1.0.0
--> inspect typed tension trace
--> read release receipt
+Run TS-Reasoner v1.5.0
+-> inspect typed verification trace
+-> read exported-sample receipt
 -> understand current limitation
--> next: language candidate bridge
+-> next: export set evaluation
 ```
 
-## 4. TensionLM Candidate Bridge
+## 4. TensionLM Candidate Boundary
 
-Next issue: `TS-Reasoner v1.1.0: TensionLM candidate bridge`.
+Current bridge claim:
 
-TensionLM should not control reasoning. It should propose candidate structures; TS-Reasoner remains the verifier.
+> TS-Reasoner can consume real exported TensionLM-side candidate data through a typed verification boundary where provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
 
-The v1.1.0 claim should be: this release tests TensionLM as a candidate proposal layer, not as the reasoning authority.
+Next technical issue: `TS-Reasoner v1.6.0: TensionLM export set evaluation`.
 
 ## 5. CIG / TS-Codex-OS
 

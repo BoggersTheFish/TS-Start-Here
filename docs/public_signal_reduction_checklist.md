@@ -13,7 +13,7 @@ BoggersTheFish profile
 ## Completed Locally
 
 - `TS-Start-Here` routes technical visitors through the same canonical path.
-- `TS-Reasoner-v0` has v1.0.0 typed tension channels, learned channel calibration, stress, structural repair, tests, docs, and receipts.
+- `TS-Reasoner-v0` has v1.5.0 typed verification receipts from typed channels through a real exported TensionLM-side sample boundary.
 - `TensionLM` has a public Hugging Face load/run script.
 - Local Hugging Face model-card checkouts route back to `TS-Start-Here` and `TensionLM`.
 - Profile README and public repo index use `TensionLM`, not `bozo`, for the first-contact route.
@@ -24,7 +24,7 @@ BoggersTheFish profile
 - GitHub repo `bozo` renamed to `TensionLM`.
 - GitHub repo descriptions/topics match `docs/repo_metadata_recommendations.md`.
 - Hugging Face model cards published from the local card updates.
-- TS-Reasoner v1.0.0 release created with `artifacts/typed_channel_release_receipt.json`.
+- TS-Reasoner v1.5.0 release created with `artifacts/real_exported_tensionlm_sample_receipt.json`.
 
 Remaining UI-only check:
 

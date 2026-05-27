@@ -18,7 +18,7 @@ The claim is not that this solves reasoning. The claim is that it creates useful
 
 ## Concrete Artifacts
 
-- [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0): TS-Core-backed typed tension reasoner with learned channel calibration, stress tests, structural repair, JSON traces, and machine-readable receipts.
+- [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0): TS-Core-backed typed tension reasoner with learned channel calibration, candidate containment, exported TensionLM-style ingestion, messy candidate stress, real exported TensionLM-side sample receipts, JSON traces, and machine-readable receipts.
 - [TensionLM](https://github.com/BoggersTheFish/TensionLM): sigmoid pairwise tension-attention experiments with a public Hugging Face runner.
 - [TS-Codex-OS](https://github.com/BoggersTheFish/TS-Codex-OS): local-first project graph, tension ledger, planner, and release receipt substrate.
 - [TS-Core](https://github.com/BoggersTheFish/TS-Core): graph/tension runtime kernel.
@@ -35,19 +35,18 @@ Expected route:
 git clone https://github.com/BoggersTheFish/TS-Reasoner-v0
 cd TS-Reasoner-v0
 python3 -m unittest discover
-python3 scripts/evaluate_typed_tension.py
-python3 scripts/generate_typed_channel_release_receipt.py
+python3 scripts/evaluate_real_exported_tensionlm_sample.py
 ```
 
-The current v1.0.0 claim is:
+The current v1.5.0 claim is:
 
-> TS-Reasoner v1.0.0 demonstrates TS-Core-backed typed tension reasoning with learned channel calibration. The release includes scoped evaluation, generalization stress testing, structural feature repair, and machine-readable receipts. It preserves trace validity while separating reasoning failures into typed operational channels such as transitivity, identity, directionality, quantifier scope, contradiction, confidence, and surface structure.
+> TS-Reasoner can consume real exported TensionLM-side candidate data through a typed verification boundary where provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
 
-This is a narrow receipt, not a broad benchmark or natural-language robustness claim.
+This is a narrow cross-repo exported-sample receipt, not live TensionLM integration into the verifier.
 
 ## Limits
 
-- The v1.0.0 benchmark and stress receipts are synthetic, small, and parser-controlled.
+- The v1.5.0 exported sample set is tiny, and the verifier remains parser-controlled.
 - The current reasoner is a toy system, not a production theorem prover.
 - The current graph/provenance systems use heuristic confidence and contradiction logic.
 - Current model experiments are not production language models.
@@ -68,18 +67,20 @@ The approach weakens if:
 The current release direction is:
 
 ```text
-v1.0.0 = typed reasoning substrate
-v1.1.0 = TensionLM candidate bridge
-v1.2.0 = messy natural-language stress
-v1.3.0 = CIG memory write/read receipts
-v1.4.0 = TS-Codex ecosystem truth-check
+v1.0.0 = typed tension channels + calibrator + structural repair
+v1.1.0 = candidate bridge with adversarial containment
+v1.2.0 = exported TensionLM-style adapter
+v1.3.0 = messy language candidate stress
+v1.4.0 = exported-output smoke boundary
+v1.5.0 = real exported TensionLM-side sample crosses into TS-Reasoner as candidate data
+v1.6.0 = planned TensionLM export set evaluation
 ```
 
-The v1.1.0 bridge should keep TensionLM in the proposer role:
+The bridge keeps TensionLM in the proposer role:
 
 ```text
-messy input text
-  -> TensionLM/simple bridge proposes candidate claims
+real or exported TensionLM-side output
+  -> adapter normalizes candidate claims
   -> TS-Reasoner typed channels verify, reject, or abstain
   -> trace records which candidates survived and why
 ```

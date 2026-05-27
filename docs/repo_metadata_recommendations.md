@@ -7,7 +7,7 @@ Use these descriptions and topics in GitHub repository settings.
 Description:
 
 ```text
-Public map for the BoggersTheFish TS research ecosystem: what exists, what is toy-scope, and what comes next.
+Public map for the BoggersTheFish TS stack: TS-Reasoner v1.5 receipts, TensionLM boundaries, limits, and next steps.
 ```
 
 Topics:
@@ -21,7 +21,7 @@ ai, reasoning, interpretability, constraint-graph, verification, provenance, res
 Description:
 
 ```text
-Inspectable toy reasoning system with constraint graphs, tension telemetry, verifier-backed traces, and release receipts.
+Typed verification reasoner with candidate containment, exported TensionLM-side sample receipts, and proof-boundary traces.
 ```
 
 Topics:
