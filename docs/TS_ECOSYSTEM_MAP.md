@@ -94,26 +94,28 @@ TS-Reasoner v1.3.0 -> messy language candidate stress
 TS-Reasoner v1.4.0 -> exported-output smoke boundary
 TS-Reasoner v1.5.0 -> real exported TensionLM-side sample crosses into TS-Reasoner as candidate data
 TS-Reasoner v1.6.0 -> exported TensionLM-side sample set with preserved failure reasons
+TS-Reasoner v1.7.0 -> deeper-chain support repair
+TS-Reasoner v2.0.0 -> learned candidate model under typed verifier authority
 ```
 
 Important caveat:
 
 TS-Reasoner is not a full LLM, theorem prover, or benchmark-grade reasoning system. The current tasks and metrics are toy-scope receipts. They show the interface and release discipline, not robust general reasoning.
 
-Current v1.6.0 claim:
+Current v2.0.0 claim:
 
-> TS-Reasoner can evaluate multiple exported TensionLM-side candidate samples through a typed verification boundary where malformed, unsupported, contradictory, reverse, and deeper-chain current-limit cases are preserved as failure reasons instead of hidden.
+> TS-Reasoner can train a tiny learned candidate model that proposes/ranks structured candidate claims while provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
 
-v1.6.0 release receipts report:
+v2.0.0 release receipts report:
 
-- `67` unit tests passing in the local final pass before release.
-- `export_set_read_success_rate`: `1.0`.
-- `candidate_parse_success_rate`: `0.8889`.
-- `candidate_parse_expectation_rate`: `1.0`.
-- `provenance_preservation_rate`: `1.0`.
+- `74` unit tests passing in the local final pass before release.
+- `candidate_ranking_accuracy`: `1.0`.
+- `channel_activation_accuracy`: `0.9531` on eval and `0.9886` on stress.
+- `resolver_prediction_accuracy`: `0.875` on eval and `1.0` on stress.
+- `abstention_accuracy`: `1.0`.
 - `accepted_outputs_typed_support_rate`: `1.0`.
 - `bad_candidate_rejection_rate`: `1.0`.
-- `verifier_beats_confidence_rate`: `1.0`.
+- `verifier_beats_model_confidence_rate`: `1.0`.
 - `candidate_graph_contamination_count`: `0`.
 - `trace_schema_validity`: `1.0`.
 
@@ -128,10 +130,10 @@ v1.0.0 release receipts established the typed-channel base:
 Current technical step:
 
 ```text
-TS-Reasoner v1.6.0 = TensionLM export set under typed verification
+TS-Reasoner v2.0.0 = learned candidate model under typed verification
 ```
 
-The v1.6.0 claim stays narrow: small exported sample set, parser-controlled verifier, not live model integration into TS-Reasoner. The `0.8889` parse success is intentional because a malformed export is preserved and rejected; `candidate_parse_expectation_rate` remains `1.0`.
+The v2.0.0 claim stays narrow: structured synthetic candidate data, parser-controlled verifier, not a chatbot, not a theorem prover, and not live model integration into TS-Reasoner. The learned model proposes and ranks; typed channels decide.
 
 ## 2. TS-Codex-OS
 

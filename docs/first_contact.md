@@ -18,7 +18,7 @@ The claim is not that this solves reasoning. The claim is that it creates useful
 
 ## Concrete Artifacts
 
-- [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0): TS-Core-backed typed tension reasoner with learned channel calibration, candidate containment, exported TensionLM-style ingestion, messy candidate stress, real exported TensionLM-side sample receipts, JSON traces, and machine-readable receipts.
+- [TS-Reasoner-v0](https://github.com/BoggersTheFish/TS-Reasoner-v0): TS-Core-backed typed tension reasoner with learned channel calibration, candidate containment, exported TensionLM-style ingestion, deeper-chain repair, a tiny learned candidate model, JSON traces, and machine-readable receipts.
 - [TensionLM](https://github.com/BoggersTheFish/TensionLM): sigmoid pairwise tension-attention experiments with a public Hugging Face runner.
 - [TS-Codex-OS](https://github.com/BoggersTheFish/TS-Codex-OS): local-first project graph, tension ledger, planner, and release receipt substrate.
 - [TS-Core](https://github.com/BoggersTheFish/TS-Core): graph/tension runtime kernel.
@@ -35,19 +35,22 @@ Expected route:
 git clone https://github.com/BoggersTheFish/TS-Reasoner-v0
 cd TS-Reasoner-v0
 python3 -m unittest discover
-python3 scripts/evaluate_real_exported_tensionlm_sample.py
+python3 scripts/build_learned_candidate_dataset.py
+python3 scripts/train_learned_candidate_model.py
+python3 scripts/evaluate_learned_candidate_model.py
+python3 scripts/demo_learned_candidate_model.py
 ```
 
-The current v1.6.0 claim is:
+The current v2.0.0 claim is:
 
-> TS-Reasoner can evaluate multiple exported TensionLM-side candidate samples through a typed verification boundary where malformed, unsupported, contradictory, reverse, and deeper-chain current-limit cases are preserved as failure reasons instead of hidden.
+> TS-Reasoner can train a tiny learned candidate model that proposes/ranks structured candidate claims while provenance is preserved, confidence remains metadata, and typed verifier channels remain proof authority.
 
-This is a narrow cross-repo exported-set receipt, not live TensionLM integration into the verifier.
+This is a narrow learned-candidate receipt, not a chatbot, theorem prover, or live TensionLM integration into the verifier.
 
 ## Limits
 
-- The v1.6.0 exported sample set is small, and the verifier remains parser-controlled.
-- The deeper-chain support gap is recorded as a current-limit case and is the next repair target.
+- The v2.0.0 learned candidate dataset is structured and synthetic, and the verifier remains parser-controlled.
+- The model predicts candidate ranking/channel signals, but typed verification still decides acceptance.
 - The current reasoner is a toy system, not a production theorem prover.
 - The current graph/provenance systems use heuristic confidence and contradiction logic.
 - Current model experiments are not production language models.
@@ -75,7 +78,8 @@ v1.3.0 = messy language candidate stress
 v1.4.0 = exported-output smoke boundary
 v1.5.0 = real exported TensionLM-side sample crosses into TS-Reasoner as candidate data
 v1.6.0 = TensionLM export set evaluation with preserved failure reasons
-v1.7.0 = planned deeper-chain support repair
+v1.7.0 = deeper-chain support repair
+v2.0.0 = learned candidate model under typed verifier authority
 ```
 
 The bridge keeps TensionLM in the proposer role:
@@ -91,6 +95,7 @@ The useful authority distinction is:
 
 ```text
 TensionLM proposes.
+Learned candidate models propose.
 TS-Reasoner verifies.
 The trace explains.
 ```

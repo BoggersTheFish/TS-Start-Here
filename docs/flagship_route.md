@@ -6,9 +6,9 @@ This is the short public route for skeptical technical visitors.
 BoggersTheFish profile README
   -> TS-Start-Here
   -> TS-Reasoner-v0
-  -> typed verification and exported-sample receipts
+  -> learned candidate model under typed verification
   -> current limitations
-  -> deeper-chain support repair
+  -> zero graph-contamination receipt
   -> CIG / TS-Codex-OS
 ```
 
@@ -20,29 +20,29 @@ Start here when you want to know what exists, what is toy-scope, and what comes 
 
 ## 2. TS-Reasoner-v0
 
-TS-Reasoner v1.6.0 is the current public bridge receipt. v1.0.0 established TS-Core-backed typed tension reasoning with learned channel calibration, stress, structural repair, and machine-readable receipts. v1.1.0 through v1.4.0 added candidate containment, exported-output ingestion, messy language stress, and exported-output smoke tests. v1.5.0 added the first real exported TensionLM-side sample path. v1.6.0 evaluates a small exported set and preserves failure reasons instead of hiding them.
+TS-Reasoner v2.0.0 is the current public learned-candidate receipt. v1.0.0 established TS-Core-backed typed tension reasoning with learned channel calibration, stress, structural repair, and machine-readable receipts. v1.1.0 through v1.4.0 added candidate containment, exported-output ingestion, messy language stress, and exported-output smoke tests. v1.5.0 added the first real exported TensionLM-side sample path. v1.6.0 evaluated a small exported set and preserved failure reasons instead of hiding them. v1.7.0 repaired the deeper-chain support gap exposed by that receipt. v2.0.0 adds a tiny learned candidate model while typed channels remain the verifier.
 
-Current useful limitation: v1.6.0 is still an exported-set receipt, not live model integration into the verifier. Real TensionLM-side candidate data remains candidate data, not proof. The deeper-chain case is preserved as the next support-repair target.
+Current useful limitation: v2.0.0 is still structured and synthetic, not a broad language model. Candidate data remains candidate data, not proof.
 
 ## 3. Read The Receipt And Limits
 
 Public route:
 
 ```text
-Run TS-Reasoner v1.6.0
--> inspect typed verification trace
--> read export set receipt
+Run TS-Reasoner v2.0.0
+-> inspect learned candidate demo
+-> read learned model receipt
+-> verify typed-channel support and zero graph contamination
 -> understand current limitation
--> next: deeper-chain support repair
 ```
 
 ## 4. TensionLM Candidate Boundary
 
 Current bridge claim:
 
-> TS-Reasoner can consume real exported TensionLM-side candidate data through a typed verification boundary where provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
+> TS-Reasoner can train a tiny learned candidate model that proposes/ranks structured candidate claims while provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
 
-Next technical issue: `TS-Reasoner v1.7.0: deeper-chain support repair`.
+The Hugging Face artifact is `BoggersTheFish/TS-TinyVerifier-v0`.
 
 ## 5. CIG / TS-Codex-OS
 

@@ -27,7 +27,7 @@ Core docs:
 ## Fast Route For Researchers
 
 1. Read [README First](README_FIRST.md) for the current public stack and claim discipline.
-2. Run [TS-Reasoner-v0 v1.6.0](https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v1.6.0), inspect the typed verification boundary, and read the TensionLM export set receipt.
+2. Run [TS-Reasoner-v0 v2.0.0](https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v2.0.0), inspect the learned candidate model receipt, and verify that typed channels remain proof authority.
 3. Inspect [TS-Benchmarks](https://github.com/BoggersTheFish/TS-Benchmarks) for falsification-oriented scaling receipts, diagnostics, and failure reports.
 4. Inspect [TensionLM](https://github.com/BoggersTheFish/TensionLM) for controlled sigmoid pairwise tension-attention comparisons and the public runner.
 5. Inspect [BoggersTheCIG](https://github.com/BoggersTheFish/BoggersTheCIG) or [cig-ts-engine](https://github.com/BoggersTheFish/cig-ts-engine) for provenance-aware claim/evidence graph work.
@@ -45,8 +45,8 @@ Core docs:
 ```text
 TS-Start-Here
 -> TS-Reasoner-v0: typed tension traces, candidate bridge, export set receipts
--> limitations: narrow exported set, parser-controlled verification, not general reasoning
--> next: deeper-chain support repair
+-> learned candidate model: proposes/ranks, typed verifier decides
+-> limitations: structured synthetic model data, parser-controlled verification, not general reasoning
 -> TS-Codex-OS: project-control substrate
 -> TS-Benchmarks: falsification and scaling harness
 -> TensionLM: model substrate experiment
@@ -65,7 +65,7 @@ Read this as an independent research stack with a sober receipt path:
 
 ## What Exists Now
 
-- TS-Reasoner v1.6.0 evaluates multiple exported TensionLM-side candidate samples through the typed verification boundary. v1.0.0 established TS-Core-backed typed tension channels, v1.1.0 added candidate containment, v1.2.0 added exported-output ingestion, v1.3.0 stressed messy candidate text, v1.4.0 added an exported-output smoke boundary, v1.5.0 proved one real exported sample could cross the boundary, and v1.6.0 preserves accepted, rejected, malformed, unsupported, contradictory, reverse, and deeper-chain current-limit cases in an aggregate receipt.
+- TS-Reasoner v2.0.0 trains a tiny learned candidate model that ranks/proposes structured candidate claims while typed verifier channels remain proof authority. v1.0.0 established TS-Core-backed typed tension channels, v1.1.0 added candidate containment, v1.2.0 added exported-output ingestion, v1.3.0 stressed messy candidate text, v1.4.0 added an exported-output smoke boundary, v1.5.0 proved one real exported sample could cross the boundary, v1.6.0 preserved export-set failures, and v1.7.0 repaired the deeper-chain support gap exposed by that receipt.
 - TS-Benchmarks exists as a falsification-oriented scaling harness with receipts, diagnostics, schema validation, plots, and an explicit scale-free failure issue.
 - TS-Codex-OS exists as a local-first project-control substrate for graphing repo state, tensions, planned actions, and receipts.
 - TS-Core exists as a graph/tension runtime kernel.
@@ -77,7 +77,7 @@ Read this as an independent research stack with a sober receipt path:
 
 - TS-Reasoner is not a broad theorem prover or general reasoning model.
 - TS-Benchmarks v0.1 is synthetic graph evidence, not real-world knowledge graph scalability.
-- TS-Reasoner v1.6.0 is still narrow: the verifier remains parser-controlled, the exported set is small, and this is not live TensionLM integration into the verifier. The deeper-chain current-limit case is recorded as the next repair target.
+- TS-Reasoner v2.0.0 is still narrow: the verifier remains parser-controlled, the learned candidate model trains on structured synthetic examples, and this is not a chatbot or live TensionLM integration into the verifier.
 - Current learned components are mechanism experiments, not production models.
 - CIG confidence and contradiction handling are heuristic.
 - TS-Codex-OS is local project-control infrastructure, not an autonomous engineering agent.
@@ -105,18 +105,18 @@ TS-Start-Here
 
 ## Current Technical Step
 
-The current TS-Reasoner release is v1.6.0:
+The current TS-Reasoner release is v2.0.0:
 
 ```text
-TensionLM export set evaluation:
-existing TensionLM-side eval artifact
--> multiple exported candidate samples
--> TS-Reasoner adapter boundary
--> typed-channel verification
--> aggregate receipt with preserved failure reasons
+Learned candidate model:
+structured reasoning examples
+-> tiny pure-Python learned ranker/channel predictor
+-> candidate bridge
+-> TS-Reasoner typed-channel verification
+-> receipt with zero candidate graph contamination
 ```
 
-The next TS-Reasoner technical step is v1.7.0:
+The current verifier repair beneath it is v1.7.0:
 
 ```text
 Deeper-chain support repair:
