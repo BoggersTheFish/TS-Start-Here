@@ -1,5 +1,25 @@
 # TS-Start-Here
 
+## Current flagship: TS-Reasoner v3.5.0
+
+TS-Reasoner v3.5.0 is the current verifier-first reasoning flagship.
+
+Release: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v3.5.0
+
+Core line:
+
+    LLMs propose.
+    TS verifies.
+    Confidence is not proof.
+    Typed traces show why.
+
+v3.5.0 adds the public surface, cold-reader demo, external mini-benchmark adapter, verifier-first draft, and TensionLM proposer-boundary smoke.
+
+Boundary: this is not a broad NLP, general theorem-proving, external benchmark victory, live TensionLM runtime, or confidence-as-proof claim.
+
+See: docs/ts_reasoner_v3_5_public_sync.md
+
+
 **Canonical ecosystem map for the BoggersTheFish TS / Thinking System research stack.**
 
 ## Read This First
