@@ -167,3 +167,13 @@ Here is what changed from v3 to v10.
 - Website: https://www.boggersthefish.com/
 - GitHub: https://github.com/BoggersTheFish
 - Hugging Face: https://huggingface.co/BoggersTheFish
+
+## Current verifier-first milestone
+
+TS-Reasoner v4.5.0 is the current milestone receipt pack for the verifier-first reasoning ladder.
+
+It aggregates v3.6 through v4.4 into one cold-reader receipt: 8 input reports, 114 known cases, 151 known candidates, zero wrong accepts, zero accepted-without-typed-support, zero candidate graph contamination, and all gates passed.
+
+Release: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v4.5.0
+
+See: `docs/ts_reasoner_v4_5_milestone.md`
