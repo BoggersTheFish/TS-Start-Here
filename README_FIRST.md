@@ -5,17 +5,17 @@ This is the current public route for the TS stack:
 ```text
 TS-Start-Here
   -> TS-Reasoner-v0
-  -> typed verification and exported-sample receipts
+  -> verifier-first runtime OS receipts
   -> current limitations
-  -> deeper-chain support repair
+  -> policy contracts / recovery drill / checkpoint restore
   -> CIG / TS-Codex-OS
 ```
 
 Lead with the bounded artifact:
 
-> Here is TS-Reasoner v1.6.0. Here is the exported TensionLM-side sample set.
-> Here is the typed verification receipt. Here are the preserved failure
-> reasons. Here is the next deeper-chain repair step.
+> Here is TS-Reasoner v10.0.0. Here is the verifier-first runtime OS receipt.
+> Here are the policy contracts, replay ledger, checkpoint/restore, recovery
+> drill, and proof-boundary limits.
 
 ## 1. TS-Start-Here
 
@@ -26,7 +26,7 @@ runs, what is still toy-scope, and which docs or receipts to inspect first.
 
 TS-Reasoner is the stable public foundation. The current release claim is:
 
-> TS-Reasoner can consume real exported TensionLM-side candidate data through a typed verification boundary where provenance is preserved, model confidence remains metadata, and typed channels remain the proof authority.
+> TS-Reasoner v10.0.0 processes candidate runtime events through policy contracts, replay, tamper-evident ledger, checkpoint/restore, and recovery while generated text, model confidence, and runtime integrity remain non-proof without typed verifier support.
 
 Start here for:
 
@@ -49,23 +49,24 @@ What matters:
 - whether tension-attention improves the reasoning loop,
 - what the receipts do not prove.
 
-## 4. TS-Reasoner v1.6.0: TensionLM Export Set Boundary
+## 4. TS-Reasoner v10.0.0: Verifier-First Runtime OS
 
-This integration lane is now active through v1.6.0. The clean claim is:
+This integration lane is now active through v10.0.0. The clean claim is:
 
-> TensionLM-side outputs enter as candidate data. TS-Reasoner verifies them. Candidate confidence is not proof.
+> Candidate events enter as candidate data. TS-Reasoner routes them through policy contracts and typed verifier boundaries. Candidate confidence is not proof.
 
 The pipeline should stay:
 
 ```text
-real or exported TensionLM-side output
-  -> adapter normalizes candidate claims
-  -> TS-Reasoner typed channels verify, reject, or abstain
-  -> trace records which candidates survived and why
+candidate event
+  -> runtime policy contract
+  -> TS-Reasoner typed verifier boundary
+  -> quarantine / repair / branch / check
+  -> replay ledger, checkpoint/restore, receipt
 ```
 
-The next technical step is v1.7.0: repair the deeper-chain support failure that
-v1.6.0 preserved as a current-limit case.
+The next technical step is keeping GitHub releases, website surfaces, README,
+model card, and release authority synchronized around v10.
 
 ## 5. CIG / TS-Codex-OS
 

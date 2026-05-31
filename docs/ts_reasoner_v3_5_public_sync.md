@@ -1,35 +1,36 @@
-# TS-Reasoner v3.5.0 Public Sync
+# TS-Reasoner v10.0.0 Public Sync
 
-TS-Reasoner v3.5.0 is the current flagship verifier-first reasoning release.
+TS-Reasoner v10.0.0 supersedes the earlier v3.5.0 public sync as the current flagship verifier-first reasoning release.
 
 Release:
 
-https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v3.5.0
+https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v10.0.0
 
 Core line:
 
-    LLMs propose.
+    Candidate events enter.
     TS verifies.
-    Confidence is not proof.
-    Typed traces show why.
+    Runtime integrity is not claim truth.
+    Typed receipts show why.
 
 ## What changed
 
-v3.5.0 levels up TS-Reasoner from an internal release ladder into a clearer public research artifact.
+v10.0.0 levels up TS-Reasoner from a public verifier-first surface into a bounded runtime OS artifact.
 
 It adds:
 
-- v3.1 public surface artifact
-- v3.2 cold-reader demo trace
-- v3.3 external mini-benchmark adapter
-- v3.4 verifier-first reasoning draft
-- v3.5 TensionLM proposer boundary smoke
+- runtime policy contracts
+- ordered replay
+- tamper-evident runtime ledger
+- checkpoint and restore
+- recovery drill
+- v10 CLI, docs, tests, and receipts
 
 ## Boundary
 
 This release does not claim broad NLP understanding, general theorem proving, external benchmark victory, live TensionLM runtime integration, or model confidence as proof authority.
 
-It claims a clearer public surface and bounded smoke artifacts for verifier-first reasoning.
+It claims a clearer runtime surface and bounded receipts for verifier-first reasoning.
 
 ## Flagship evidence
 

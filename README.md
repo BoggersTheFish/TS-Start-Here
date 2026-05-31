@@ -1,17 +1,17 @@
 # TS-Start-Here
 
-## Current flagship: TS-Reasoner v3.5.0
+## Current flagship: TS-Reasoner v10.0.0
 
-TS-Reasoner v3.5.0 is the current verifier-first reasoning flagship.
+TS-Reasoner v10.0.0 is the current verifier-first reasoning flagship.
 
-Release: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v3.5.0
+Release: https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v10.0.0
 
 Core line:
 
-    LLMs propose.
+    Candidate events enter.
     TS verifies.
-    Confidence is not proof.
-    Typed traces show why.
+    Runtime integrity is not claim truth.
+    Typed receipts show why.
 
 v3.5.0 adds the public surface, cold-reader demo, external mini-benchmark adapter, verifier-first draft, and TensionLM proposer-boundary smoke.
 
@@ -47,7 +47,7 @@ Core docs:
 ## Fast Route For Researchers
 
 1. Read [README First](README_FIRST.md) for the current public stack and claim discipline.
-2. Run [TS-Reasoner-v0 v2.0.0](https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v2.0.0), inspect the learned candidate model receipt, and verify that typed channels remain proof authority.
+2. Run [TS-Reasoner-v0 v10.0.0](https://github.com/BoggersTheFish/TS-Reasoner-v0/releases/tag/v10.0.0), inspect the runtime OS receipt, and verify that runtime integrity, generated text, and confidence remain non-proof without typed verifier support.
 3. Inspect [TS-Benchmarks](https://github.com/BoggersTheFish/TS-Benchmarks) for falsification-oriented scaling receipts, diagnostics, and failure reports.
 4. Inspect [TensionLM](https://github.com/BoggersTheFish/TensionLM) for controlled sigmoid pairwise tension-attention comparisons and the public runner.
 5. Inspect [BoggersTheCIG](https://github.com/BoggersTheFish/BoggersTheCIG) or [cig-ts-engine](https://github.com/BoggersTheFish/cig-ts-engine) for provenance-aware claim/evidence graph work.
@@ -64,9 +64,9 @@ Core docs:
 
 ```text
 TS-Start-Here
--> TS-Reasoner-v0: typed tension traces, candidate bridge, export set receipts
--> learned candidate model: proposes/ranks, typed verifier decides
--> limitations: structured synthetic model data, parser-controlled verification, not general reasoning
+-> TS-Reasoner-v0: verifier-first runtime OS, typed traces, replay, ledger, checkpoint, restore
+-> candidate events: quarantine / repair / branch / check, typed verifier decides
+-> limitations: runtime integrity is not claim truth, not a chatbot, not general reasoning
 -> TS-Codex-OS: project-control substrate
 -> TS-Benchmarks: falsification and scaling harness
 -> TensionLM: model substrate experiment
@@ -85,7 +85,7 @@ Read this as an independent research stack with a sober receipt path:
 
 ## What Exists Now
 
-- TS-Reasoner v2.0.0 trains a tiny learned candidate model that ranks/proposes structured candidate claims while typed verifier channels remain proof authority. v1.0.0 established TS-Core-backed typed tension channels, v1.1.0 added candidate containment, v1.2.0 added exported-output ingestion, v1.3.0 stressed messy candidate text, v1.4.0 added an exported-output smoke boundary, v1.5.0 proved one real exported sample could cross the boundary, v1.6.0 preserved export-set failures, and v1.7.0 repaired the deeper-chain support gap exposed by that receipt.
+- TS-Reasoner v10.0.0 packages the verifier-first runtime line into one auditable runtime surface: policy contracts, ordered replay, tamper-evident ledger, checkpoint/restore, recovery drill, CLI, docs, tests, and receipts. Earlier releases added typed channels, candidate containment, exported-output ingestion, learned candidate ranking, runtime kernel, replay, ledger, and checkpoint restore.
 - TS-Benchmarks exists as a falsification-oriented scaling harness with receipts, diagnostics, schema validation, plots, and an explicit scale-free failure issue.
 - TS-Codex-OS exists as a local-first project-control substrate for graphing repo state, tensions, planned actions, and receipts.
 - TS-Core exists as a graph/tension runtime kernel.
@@ -97,7 +97,7 @@ Read this as an independent research stack with a sober receipt path:
 
 - TS-Reasoner is not a broad theorem prover or general reasoning model.
 - TS-Benchmarks v0.1 is synthetic graph evidence, not real-world knowledge graph scalability.
-- TS-Reasoner v2.0.0 is still narrow: the verifier remains parser-controlled, the learned candidate model trains on structured synthetic examples, and this is not a chatbot or live TensionLM integration into the verifier.
+- TS-Reasoner v10.0.0 is still bounded: runtime integrity is not claim truth, generated text is not proof, model confidence is not proof, and this is not a chatbot or general theorem prover.
 - Current learned components are mechanism experiments, not production models.
 - CIG confidence and contradiction handling are heuristic.
 - TS-Codex-OS is local project-control infrastructure, not an autonomous engineering agent.
@@ -125,18 +125,19 @@ TS-Start-Here
 
 ## Current Technical Step
 
-The current TS-Reasoner release is v2.0.0:
+The current TS-Reasoner release is v10.0.0:
 
 ```text
-Learned candidate model:
-structured reasoning examples
--> tiny pure-Python learned ranker/channel predictor
--> candidate bridge
--> TS-Reasoner typed-channel verification
+Verifier-first runtime OS:
+candidate event
+-> runtime policy contract
+-> typed verifier boundary
+-> quarantine / repair / branch / check
+-> replay + tamper-evident ledger + checkpoint/restore
 -> receipt with zero candidate graph contamination
 ```
 
-The current verifier repair beneath it is v1.7.0:
+Historical verifier repair beneath the runtime line:
 
 ```text
 Deeper-chain support repair:
